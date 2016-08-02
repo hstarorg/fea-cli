@@ -6,7 +6,7 @@ let program = require('commander');
 let packageJson = require('./package.json');
 
 let jhClean = require('./lib/jh_clean');
-let version = `Newkit-cli: ${packageJson.version}`;
+let version = `JH-cli: ${packageJson.version}`;
 
 program
   .version(version)
