@@ -1,6 +1,6 @@
 {
   "name": "jh-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cli tools for Jay.Hu",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,10 @@
     "url": "git+https://github.com/hstarorg/jh-cli.git"
   },
   "bin": {
-    "jh": "./index.js"
+    "j": "./index.js"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,9 @@
   "homepage": "https://github.com/hstarorg/jh-cli#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "del": "^2.2.1"
+    "tinify": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "0.0.2"
   }
 }

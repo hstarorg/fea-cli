@@ -1,23 +1,21 @@
 #!/usr/bin/env node
 
-'use strict';
-
-let program = require('commander');
-let packageJson = require('./package.json');
-
-let jhClean = require('./lib/jh_clean');
-let version = `JH-cli: ${packageJson.version}`;
+const program = require('commander');
+const packageJson = require('./package.json');
+const version = `J-cli: ${packageJson.version}`;
 
 program
   .version(version)
-  .usage('JH cli tool');
+  .usage('J cli tool');
 
-// 清理目录
+// 压缩图片
 program
-  .command('clean <path>')
-  .description('Clean files and folders')
+  .command('tinify <path>')
+  .option('-k, --key', 'Set api key.')
+  .option('-r, --resize [resize]', 'Resize.')
+  .description('Tinify compresses your images intelligently.')
   .action((path, cmd) => {
-    require('./lib/jh_clean')(path);
+    require('./lib/j_tinify')(path, cmd);
   });
 
 // 解析命令
