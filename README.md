@@ -1,10 +1,10 @@
-# jh-cli
-Cli tools for Jay.Hu
+# j-cli
+Cli tools for Jay
 
 # How to use?
 
-### 1. Clean Folder
+**1、init - 初始化项目模板**
 
 ```javascript
-$ jh clean <path>
+j init <template>
 ```

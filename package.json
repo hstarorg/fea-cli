@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hstarorg/jh-cli.git"
+    "url": "git+https://github.com/hstarorg/j-cli.git"
   },
   "bin": {
     "j": "./index.js"
@@ -20,12 +20,11 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hstarorg/jh-cli/issues"
+    "url": "https://github.com/hstarorg/j-cli/issues"
   },
-  "homepage": "https://github.com/hstarorg/jh-cli#readme",
+  "homepage": "https://github.com/hstarorg/j-cli#readme",
   "dependencies": {
-    "commander": "^2.9.0",
-    "tinify": "^1.3.0"
+    "commander": "^2.9.0"
   },
   "devDependencies": {
     "@types/node": "0.0.2"

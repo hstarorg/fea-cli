@@ -10,12 +10,10 @@ program
 
 // 压缩图片
 program
-  .command('tinify <path>')
-  .option('-k, --key', 'Set api key.')
-  .option('-r, --resize [resize]', 'Resize.')
-  .description('Tinify compresses your images intelligently.')
-  .action((path, cmd) => {
-    require('./lib/j_tinify')(path, cmd);
+  .command('init <template>')
+  .description('Init project template.')
+  .action(template => {
+    require('./lib/j_init')(template);
   });
 
 // 解析命令
